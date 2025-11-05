@@ -1,5 +1,6 @@
 package ie.atu.week7cicd;
 
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,5 +28,14 @@ public class PersonService
     {
         return repo.findByEmployeeId(id)
                 .orElseThrow(() -> new IllegalArgumentException("Person not found"));
+    }
+
+    public Person update(String id, @Valid Person updatedPerson)
+    {
+        return null;
+    }
+
+    public void delete(String id) {
+
     }
 }
