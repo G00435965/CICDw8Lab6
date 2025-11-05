@@ -21,5 +21,6 @@ public class Person {
     private String employeeId;
     private String position;
     private String department;
+    private boolean admin;
 
 }
